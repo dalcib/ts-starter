@@ -1,0 +1,35 @@
+{
+  "name": " ",
+  "version": "0.1.0",
+  "description": "",
+  "private": true,
+  "author": "Dalci de Jesus Bagolin",
+  "scripts": {
+    "start": "run-p start-*",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "start-cra": "react-scripts start",
+    "start-ts": "tsc -w",
+    "init-npm": "npm link react react-dom react-scripts mobx mobx-react js-plus tslib",
+    "init-types": "npm link @types/react @types/react-dom @types/jest @types/node",
+    "init": "run-s init-*"
+  },
+  "devDependencies": {
+    "react-scripts": "",
+    "tslib": "",
+    "@types/react": "",
+    "@types/react-dom": "",
+    "@types/jest": "",
+    "@types/node": ""
+  },
+  "dependencies": {
+    "react": "",
+    "react-dom": "",
+    "mobx": "",
+    "mobx-react": ""
+  },
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js"
+}

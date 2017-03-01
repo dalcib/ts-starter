@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2015", 
+    "module": "es2015", 
+    "outDir": "src",
+    "rootDir": "app",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "jsx": "react-native",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "noEmitHelpers": true,
+    "importHelpers": true
+    //"noImplicitUseStrict": true,
+    //"preserveConstEnums": true,
+    //"allowJs": true,
+    //"noImplicitReturns": true,
+    //"noImplicitThis": true,
+    //"noUnusedLocals": true,
+    //"noUnusedParameters": true,
+  },
+  "exclude": [
+      "node_modules"
+  ]
+}
