@@ -13,7 +13,11 @@
     "start-ts": "tsc -w",
     "init-npm": "npm link react react-dom react-scripts mobx mobx-react js-plus tslib",
     "init-types": "npm link @types/react @types/react-dom @types/jest @types/node",
+    "install-eslint": "npm install -g eslint-config-react-app eslint babel-eslint eslint-plugin-react eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-flowtype",
     "init": "run-s init-*"
+  },
+  "eslintConfigDisabled": {
+    "extends": "react-app"
   },
   "devDependencies": {
     "react-scripts": "",
