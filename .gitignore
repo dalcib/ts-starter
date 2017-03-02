@@ -18,3 +18,4 @@ yarn-error.log*
 
 #ts
 src
+.vscode/chrome
