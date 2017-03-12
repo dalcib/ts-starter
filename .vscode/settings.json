@@ -1,4 +1,11 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-  //"typescript.tsdk": "C:\\Users\\dalci.bagolin\\AppData\\Roaming\\npm\\node_modules\\typescript\\lib"
+  //"typescript.tsdk": "C:\\Users\\dalci.bagolin\\AppData\\Roaming\\npm\\node_modules\\typescript\\lib",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "src/**/.map": true
+  }
 }
