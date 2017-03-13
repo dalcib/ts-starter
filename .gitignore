@@ -17,5 +17,12 @@ yarn-debug.log*
 yarn-error.log*
 
 #ts
-src
-.vscode/chrome
+<<<<<<< HEAD
+/.vscode/chrome
+/src
+*.map
+=======
+/.vscode/chrome
+/src
+*.map
+>>>>>>> 5a510f68fb6a681ee46b54a44b04f96c9f9290b3

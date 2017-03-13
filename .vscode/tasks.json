@@ -1,0 +1,47 @@
+{
+  "version": "0.1.0",
+  "command": "npm",
+  "isShellCommand": true,
+  "suppressTaskName": true,
+  "tasks": [
+    {
+      // "npm install --loglevel info"
+      "taskName": "install",
+      "args": ["install", "--loglevel", "info"]
+    },
+    {
+      // Test task, Ctrl+Shift+T
+      // "npm test"
+      "taskName": "test",
+      "isTestCommand": true,
+      "args": ["test"]
+    },
+    {
+      // Build task, Ctrl+Shift+B
+      // "npm run build"
+      "taskName": "build",
+      "isBuildCommand": true,
+      "args": ["run", "build"]
+    },
+    {
+      // "npm run start"
+      "taskName": "start",
+      "args": ["start"]
+    },
+    {
+      // "npm run u"
+      "taskName": "u",
+      "args": ["run", "u"]
+    },
+    {
+      // "npm run tsc"
+      "taskName": "tsc",
+      "args": ["run", "start-ts"]
+    },
+    {
+      // "npm run init"
+      "taskName": "init",
+      "args": ["run", "init"]
+    }
+  ]
+}

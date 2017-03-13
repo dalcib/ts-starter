@@ -12,7 +12,7 @@
     "moduleResolution": "node",
     "strictNullChecks": true,
     "noEmitHelpers": true,
-    "importHelpers": true
+    "importHelpers": true,
     //"noImplicitUseStrict": true,
     //"preserveConstEnums": true,
     //"allowJs": true,
@@ -20,6 +20,7 @@
     //"noImplicitThis": true,
     //"noUnusedLocals": true,
     //"noUnusedParameters": true,
+    "watch": true
   },
   "exclude": [
       "node_modules"
