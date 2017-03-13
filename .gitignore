@@ -18,4 +18,5 @@ yarn-error.log*
 
 #ts
 /.vscode/chrome
+/src
 *.map
