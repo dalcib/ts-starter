@@ -5,5 +5,5 @@
 it('renders without crashing', () => {
   //const div = document.createElement('div');
   //ReactDOM.render(<App />, div);
-  expect(1).toBe(2 + 4)
+  expect(123).toBe(2 + 4)
 });

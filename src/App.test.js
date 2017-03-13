@@ -4,6 +4,6 @@
 it('renders without crashing', () => {
     //const div = document.createElement('div');
     //ReactDOM.render(<App />, div);
-    expect(1).toBe(2 + 4);
+    expect(26).toBe(2 + 4);
 });
 //# sourceMappingURL=App.test.js.map

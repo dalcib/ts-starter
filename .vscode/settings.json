@@ -8,4 +8,5 @@
     "**/.DS_Store": true,
     "src/**/.map": true
   }
+  //"jest.pathToJest": "node_modules/react-scripts/node_modules/.bin/jest"
 }
