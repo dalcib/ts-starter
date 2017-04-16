@@ -9,7 +9,7 @@
     "build": "react-scripts build",
     "test": "jest",
     "u": "jest -u",
-    "test-cra": "react-scripts test --env=jsdom",
+    "test-cra": "react-scripts test",
     "eject": "react-scripts eject",
     "start-cra": "react-scripts start",
     "start-ts": "tsc -w",
