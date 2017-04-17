@@ -13,6 +13,8 @@
     "strictNullChecks": true,
     "noEmitHelpers": true,
     "importHelpers": true,
+    ////"inlineSourceMap": true,
+    ////"sourceRoot": "src",
     //"noImplicitUseStrict": true,
     //"preserveConstEnums": true,
     //"allowJs": true,
