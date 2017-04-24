@@ -1,4 +1,4 @@
-import * as React from 'react';
+/*import * as React from 'react';
 //import './../assets/App.css';
 
 const logo = "require('./../public/logo.svg')";
@@ -19,4 +19,28 @@ class App extends React.Component<null, null> {
   }
 }
 
-export default App;
+export default App;*/
+
+import * as React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+export default class App extends React.Component<any, any> {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>Open up App.js to start working on your app !</Text>
+        <Text>Changes you make will automatically reload.</Text>
+        <Text>Shake your phone to open the developer menu.</Text>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
