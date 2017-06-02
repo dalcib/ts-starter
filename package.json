@@ -24,7 +24,7 @@
     "install-eslint": "npm install -g eslint-config-react-app eslint babel-eslint eslint-plugin-react eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-flowtype eslint-plugin-import",
     "init-cra": "run-s init-cra init-npm",
     "init-crna": "run-s init-crna init-npm",
-    "prettier": "prettier --write 'src/**.js' --single-quote --trailing-comma=all --bracket-spacing=false"
+    "prettier": "prettier --write \"app/**.*(ts|tsx)\" --parser typescript --single-quote --bracket-spacing=false --no-semi"
   },
   "devDependencies": {
     "react-scripts": "",

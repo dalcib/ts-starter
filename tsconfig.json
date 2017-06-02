@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2017", 
+    "target": "es2015", 
     "module": "es2015", 
     "outDir": "src",
     "rootDir": "app",
@@ -11,10 +11,7 @@
     "moduleResolution": "node",
     "noEmitHelpers": true,
     "importHelpers": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
+    "strict": true,
     "noImplicitReturns": true,
     //"allowJs": true,
     ////"inlineSourceMap": true,
