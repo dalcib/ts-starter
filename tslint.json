@@ -5,121 +5,150 @@
   * - the name of an NPM module which has a "main" file that exports a config object
   * - a relative path to a JSON file
   */
-  "extends": ["tslint:recommended", "tslint-react"],
+  "extends": [
+    "tslint:recommended",
+    "tslint-react"
+  ],
   "rules": {
+    "deprecation": true,
+    "prefer-const": true,
+    "typeof-compare": true,
+    "use-default-type-parameter": true,
+    "use-isnan": true,
+    "strict-type-predicates": true,
+    "prefer-object-spread": true,
+    "prefer-conditional-expression": true,
+    "no-unbound-method": [
+      true,
+      "ignore-static"
+    ],
+    "no-invalid-template-strings": true,
+    "no-for-in-array": true,
+    "no-floating-promises": true,
+    "no-conditional-assignment": true,
+    "await-promise": [
+      true,
+      "Thenable"
+    ],
+    "unified-signatures": true,
+    "no-unnecessary-type-assertion": true,
+    "promise-function-async": true,
+    "no-angle-bracket-type-assertion": true,
+    "no-boolean-literal-compare": true,
+    "match-default-export-name": true,
+    "no-unnecessary-callback-wrapper": true,
+    "arrow-return-shorthand": [
+      false
+    ],
+    "no-unnecessary-qualifier": true,
+    "prefer-switch": [
+      true,
+      {
+        "min-cases": 2
+      }
+    ],
+    "prefer-template": [
+      true,
+      "allow-single-concat"
+    ],
+    "return-undefined": true,
+    "switch-final-break": true,
+    "type-literal-delimiter": true,
+    "arrow-parens": false,
+    "no-consecutive-blank-lines": [
+      true
+    ],
     "align": [
-      true,
-      "parameters",
-      "arguments",
-      "statements"
+      false
     ],
-    "ban": false,
-    "class-name": true,
-    "comment-format": [false], //"check-space","check-lowercase"    ],
-    "curly": false,
-    "eofline": true,
-    "forin": true,
-    "indent": [
-      true,
-      2
+    "import-spacing": false,
+    "interface-name": [
+      false
     ],
-    "interface-name": [false],
-    "jsdoc-format": true,
-    "label-position": true,
-    "label-undefined": true,
+    "interface-over-type-literal": false,
+    "jsdoc-format": false,
+    "no-trailing-whitespace": false,
+    "one-line": [
+      false
+    ],
+    "object-literal-key-quotes": [
+      false
+    ],
+    "ordered-imports": [
+      false
+    ],
+    "quotemark": [
+      false
+    ],
+    "semicolon": [
+      false
+    ],
+    "space-before-function-paren": false,
+    "whitespace": [
+      false
+    ],
+    "comment-format": [
+      false
+    ],
     "max-line-length": [
-    false
-    
+      false
     ],
-    "member-access": false,  // add
+    "indent": [
+      false
+    ],
+    "curly": false,
+    //"ban": false,
+    "member-access": false, // add
+    "object-literal-sort-keys": false, // add
+    "no-console": [
+      false
+    ],
+    "typedef-whitespace": [
+      false
+    ],
+    "only-arrow-functions": [
+      false
+    ],
+    "trailing-comma": [
+      false
+    ],
+    "no-var-requires": false,
     "member-ordering": [
       false,
       "public-before-private",
       "static-before-instance",
       "variables-before-functions"
     ],
-    "no-any": false,
-    "no-arg": true,
-    "no-bitwise": true,
-    "no-console": [
-      false, // change
-      "debug",
-      "info",
-      "time",
-      "timeEnd",
-      "trace"
-    ],
-    "no-construct": true,
     "no-constructor-vars": true,
     "no-debugger": true,
     "no-duplicate-key": true,
     "no-shadowed-variable": true,
     "no-duplicate-variable": true,
-    "no-empty": true,
-    "no-eval": true,
-    //"no-require-imports": true,
-    "no-string-literal": true,
     "no-switch-case-fall-through": true,
-    "trailing-comma": [
-      {"singleline": "never",
-      "multiline": "always"}
-    ],
-    "no-trailing-whitespace": true,
     "no-unreachable": true,
-    "no-unused-expression": true,
-    "no-unused-variable": [true, "react"],
-    "no-use-before-declare": false,
+    "no-unused-variable": [
+      true,
+      {
+        "ignore-pattern": "React"
+      }
+    ],
+    "no-unused-expression": [
+      true,
+      "allow-fast-null-checks",
+      "allow-new",
+      "allow-tagged-template"
+    ],
+    "no-unsafe-finally": true,
     "no-var-keyword": true,
-    "no-var-requires": false,
-    "object-literal-sort-keys": false, // add
-    "one-line": [
-      true,
-      "check-open-brace",
-      "check-catch",
-      "check-else",
-      "check-whitespace"
-    ],
-    "quotemark": [false, "single", "jsx-double"],
-    "radix": true,
-    "semicolon": [false],  // false
     "switch-default": true,
-    "triple-equals": [
-      true,
-      "allow-null-check"
-    ],
     "typedef": [
       true,
       //"call-signature",
       "parameter",
-      "property-declaration"//,
+      "property-declaration" //,
       //"member-variable-declaration"
     ],
-    "typedef-whitespace": [
-      true,
-      {
-        "call-signature": "nospace",
-        "index-signature": "nospace",
-        "parameter": "nospace",
-        "property-declaration": "nospace",
-        "variable-declaration": "nospace"
-      }
-    ],
-    "use-strict": [
-      false,
-      "check-module",
-      "check-function"
-    ],
-    "variable-name": false,
-    "whitespace": [
-      true,
-      "check-branch",
-      "check-decl",
-      "check-operator",
-      "check-separator",
-      "check-type",
-      "check-typecast"  //add
-    ],
-    "jsx-no-multiline-js": false  //add
+    "jsx-no-multiline-js": false //add
   },
   "rulesDirectory": [
     /*
