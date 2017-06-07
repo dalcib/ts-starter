@@ -1,6 +1,7 @@
-import * as React from 'react';
-//import ReactDOM from 'react-dom';
-import App from './App';
+import 'react-native'
+import * as React from 'react'
+import renderer from 'react-test-renderer'
+import App from './App'
 
 it('renders without crashing', () => {
   //const div = document.createElement('div');
@@ -9,6 +10,6 @@ it('renders without crashing', () => {
 })
 
 it('snapshot App', () => {
-  expect(App).toMatchSnapshot()
-}
-)
+  const tree = renderer.create(<App />)
+  expect(tree).toMatchSnapshot()
+})

@@ -12,12 +12,14 @@
     "start": "run-p start-ts start-cra",
     "build": "react-scripts build",
     "test": "jest --watch",
+    "txp": "jest --watch  --config=expo-jest.json",
+    "tst": "jest --watch --config=ts-jest.json",
     "u": "jest -u",
     "start-cra": "react-scripts start",
     "start-ts": "tsc -w",
     "init-npm": "npm link mobx mobx-react js-plus tslib tsutils @types/node react @types/react ts-jest",
-    "init-cra-base": "npm link react react-dom react-scripts @types/react @types/react-dom ts-jest",
-    "init-crna-base": "npm link react react-native react-native-scripts expo @types/react @types/react-native react-test-renderer jest-expo ts-jest",
+    "init-cra-base": "npm link react react-dom react-scripts @types/react @types/react-dom",
+    "init-crna-base": "npm link react react-native react-native-scripts expo @types/react @types/react-native react-test-renderer jest-expo",
     "init-jest": "npm link jest-expo react-test-renderer ts-jest jest @types/jest babel-jest babel-preset-expo babel-plugin-transform-es2015-modules-commonjs",
     "init-cra": "run-s init-cra-base init-npm",
     "init-crna": "run-s init-crna-base init-npm",
@@ -52,28 +54,6 @@
   "license": "MIT",
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "jest": {
-    "preset": "jest-expo",
-    "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
-      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
-    "globals": {
-      "__TS_CONFIG__": {
-        "module": "commonjs",
-        "jsx": "react",
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "allowSyntheticDefaultImports": false,
-        "moduleResolution": "node",
-        "noEmitHelpers": true,
-        "importHelpers": true
-      }
-    }
+    "preset": "jest-expo"
   }
 }
