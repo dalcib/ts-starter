@@ -6,25 +6,27 @@
   "author": "Dalci de Jesus Bagolin",
   "scripts": {
     "start-crna": "react-native-scripts start",
-    "eject-crna": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
-    "test-crna": "node node_modules/jest/bin/jest.js --watch",
-    "start": "run-p start-ts start-crna",
+    "crna": "run-p start-ts start-crna",
+    "start": "run-p start-ts start-cra",
     "build": "react-scripts build",
     "test": "jest --watch",
     "u": "jest -u",
-    "test-cra": "react-scripts test --watch",
-    "eject-cra": "react-scripts eject",
     "start-cra": "react-scripts start",
     "start-ts": "tsc -w",
-    "init-npm": "npm link mobx mobx-react js-plus tslib ts-jest jest @types/jest @types/node",
-    "init-cra-base": "npm link react@15.4.1 react-dom@15.4.1 react-scripts @types/react @types/react-dom",
-    "init-crna-base": "npm link expo@15.1.3 react@15.4.1 react-native@0.42.3 react-native-scripts@0.0.27 react-test-renderer@15.4.1 @types/react-native jest-expo@0.3.0",
-    "install-eslint": "npm install -g eslint-config-react-app eslint babel-eslint eslint-plugin-react eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-flowtype eslint-plugin-import",
-    "init-cra": "run-s init-cra init-npm",
-    "init-crna": "run-s init-crna init-npm",
-    "prettier": "prettier --write \"app/**.*(ts|tsx)\" --parser typescript --single-quote --bracket-spacing=false --no-semi"
+    "init-npm": "npm link mobx mobx-react js-plus tslib tsutils @types/node react @types/react ts-jest",
+    "init-cra-base": "npm link react react-dom react-scripts @types/react @types/react-dom ts-jest",
+    "init-crna-base": "npm link react react-native react-native-scripts expo @types/react @types/react-native react-test-renderer jest-expo ts-jest",
+    "init-jest": "npm link jest-expo react-test-renderer ts-jest jest @types/jest babel-jest babel-preset-expo babel-plugin-transform-es2015-modules-commonjs",
+    "init-cra": "run-s init-cra-base init-npm",
+    "init-crna": "run-s init-crna-base init-npm",
+    "prettier": "prettier --write \"app/**.*(ts|tsx)\" --parser typescript --single-quote --bracket-spacing=false --no-semi",
+    "install-npm": "npm i -g mobx mobx-react js-plus tslib tsutils @types/node react@16.0.0-alpha.6 @types/react ts-jest",
+    "install-cra": "npm i -g  react-dom@16.0.0-alpha.6 react-scripts  @types/react-dom",
+    "install-crna": "npm i -g  react-native@0.44.0 expo@17.0.0  @types/react-native  react-native-scripts@0.0.30 react-test-renderer@16.0.0-alpha.6 jest-expo",
+    "install-eslint": "npm i -g eslint-config-react-app eslint babel-eslint eslint-plugin-react eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-flowtype eslint-plugin-import",
+    "install-jest": "npm i -g jest-expo react-test-renderer ts-jest jest @types/jest babel-jest babel-preset-expo babel-plugin-transform-es2015-modules-commonjs"
   },
   "devDependencies": {
     "react-scripts": "",
@@ -35,40 +37,40 @@
     "@types/jest": "",
     "@types/node": "",
     "ts-jest": "",
-    "jest": "",
-    "jest-expo": "^0.3.0",
-    "eslint-config-react-app": "",
-    "react-native-scripts": "0.0.27",
-    "react-test-renderer": "~15.4.1"
+    "react-native-scripts": ""
   },
   "dependencies": {
-    "expo": "^15.1.3",
-    "react": "~15.4.1",
-    "react-native": "0.42.3",
-    "react-dom": "~15.4.1",
-    "react-native-web": "",
-    "react-native-navigation": "",
+    "expo": "^",
+    "js-plus": "",
     "mobx": "",
     "mobx-react": "",
-    "js-plus": ""
+    "react": "",
+    "react-dom": "",
+    "react-native": ""
   },
   "keywords": [],
   "license": "MIT",
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "jest": {
-    "transform": {".(ts|tsx)": "<rootDir>/../node_modules/ts-jest/preprocessor.js"},
+    "preset": "jest-expo",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "moduleFileExtensions": ["ts", "tsx", "js" ],
-    "rootDir": "app",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
     "globals": {
       "__TS_CONFIG__": {
         "module": "commonjs",
         "jsx": "react",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "allowSyntheticDefaultImports": true,
+        "allowSyntheticDefaultImports": false,
         "moduleResolution": "node",
-        "strictNullChecks": true,
         "noEmitHelpers": true,
         "importHelpers": true
       }
