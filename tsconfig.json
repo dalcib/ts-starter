@@ -7,6 +7,11 @@
     "sourceMap": true,
     "experimentalDecorators": true,
     "jsx": "react",
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016"
+    ],
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "noEmitHelpers": true,

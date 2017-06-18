@@ -9,11 +9,11 @@
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
     "test": "jest --watch",
-    "start": "",
-    "build": "react-scripts build",
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
     "tst": "react-scripts-ts test",
     "u": "jest -u",
-    "start-cra": "react-scripts start"
+    "start-cra": "react-scripts-ts start"
   },
   "devDependencies": {
     "if-env": "^1.0.0",
@@ -30,15 +30,15 @@
     "@types/node": "^7.0.31",
     "@types/react": "^15.0.29",
     "@types/react-dom": "^15.5.0",
-    "@types/react-native": "",
+    "@types/react-native": "0.44.11",
     "expo": "^18.0.0-rc.2",
     "js-plus": "0.1.1",
     "mobx": "3.1.15",
-    "mobx-react": "4.2.0",
+    "mobx-react": "4.2.1",
     "react": "^16.0.0-alpha.12",
     "react-dom": "^16.0.0-alpha.12",
     "react-native": "^0.45.1",
-    "tslib": "^2.3.4"
+    "tslib": "^1.7.1"
   },
   "keywords": [],
   "license": "MIT",
