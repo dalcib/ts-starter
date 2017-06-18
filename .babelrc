@@ -2,7 +2,6 @@
   "presets": [
     "babel-preset-expo"
   ],
-  "sourceMaps": "inline",
   "env": {
     "development": {
       "plugins": [
