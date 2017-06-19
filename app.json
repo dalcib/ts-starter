@@ -1,5 +1,7 @@
 {
   "expo": {
-    "sdkVersion": "17.0.0"
+    "name": "test-crna",
+    "sdkVersion": "17.0.0",
+    "slug": "test-crna"
   }
 }

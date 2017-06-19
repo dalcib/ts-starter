@@ -22,7 +22,7 @@
     "react-native-scripts": "0.0.31",
     "react-native-typescript-transformer": "^1.0.9",
     "react-scripts-ts": "2.2.0",
-    "react-test-renderer": "^16.0.0-alpha.12",
+    "react-test-renderer": "16.0.0-alpha.12",
     "typescript": "^2.3.4"
   },
   "dependencies": {
@@ -35,9 +35,9 @@
     "js-plus": "0.1.1",
     "mobx": "3.1.15",
     "mobx-react": "4.2.1",
-    "react": "^16.0.0-alpha.12",
-    "react-dom": "^16.0.0-alpha.12",
-    "react-native": "^0.45.1",
+    "react": "16.0.0-alpha.12",
+    "react-dom": "16.0.0-alpha.12",
+    "react-native": "0.45.0",
     "tslib": "^1.7.1"
   },
   "keywords": [],

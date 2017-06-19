@@ -3,7 +3,6 @@
     "target": "es5",
     "module": "commonjs",
     "outDir": "build/dist",
-    "rootDir": "src",
     "sourceMap": true,
     "experimentalDecorators": true,
     "jsx": "react",
