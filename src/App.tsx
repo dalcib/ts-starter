@@ -1,5 +1,35 @@
 import * as React from 'react'
-import './App.css'
+import { AppRegistry, Image, StyleSheet, Text, View } from 'react-native'
+
+// Components
+const Card = ({ children }: any) => <View style={styles.card}>{children}</View>
+const Title = ({ children }: any) => <Text style={styles.title}>{children}</Text>
+const Photo = ({ uri }: {uri: string}) => <Image source={{ uri }} style={styles.image} />
+const App = () => (
+  <Card>
+    <Title>App Card</Title>
+    <Photo uri="/some-photo.jpg" />
+  </Card>
+)
+
+// Styles
+const styles = StyleSheet.create({
+  card: {
+    flexGrow: 1,
+    justifyContent: 'center'
+  },
+  title: {
+    fontSize: '1.25rem',
+    fontWeight: 'bold'
+  },
+  image: {
+    height: 40,
+    marginVertical: 10,
+    width: 40
+  }
+})
+
+/*import './App.css'
 
 const logo = require('./logo.svg')
 
@@ -19,4 +49,4 @@ class App extends React.Component<{}, null> {
   }
 }
 
-export default App
+export default App*/

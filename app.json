@@ -1,7 +1,12 @@
 {
   "expo": {
-    "name": "test-crna",
-    "sdkVersion": "17.0.0",
-    "slug": "test-crna"
+    "sdkVersion": "18.0.0",
+    "packagerOpts": {
+      "sourceExts": [
+        "ts",
+        "tsx"
+      ],
+      "transformer": "node_modules/react-native-typescript-transformer"
+    }
   }
 }
