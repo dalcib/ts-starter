@@ -5,39 +5,39 @@
   "private": true,
   "author": "Dalci de Jesus Bagolin",
   "scripts": {
-    "start-crna": "react-native-scripts start",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
+    "expo": "react-native-scripts start",
     "test": "jest --watch",
-    "start": "react-scripts-ts start",
+    "web": "react-scripts-ts start",
     "build": "react-scripts-ts build",
-    "tst": "react-scripts-ts test",
-    "u": "jest -u",
-    "start-cra": "react-scripts-ts start"
+    "start": "react-scripts-ts test",
+    "u": "jest -u"
   },
   "devDependencies": {
-    "if-env": "^1.0.0",
-    "jest-expo": "^1.0.2",
-    "jest-expo-ts": "^0.3.0",
-    "react-native-scripts": "0.0.31",
-    "react-native-typescript-transformer": "^1.0.9",
+    "jest-expo": "^18.0.0",
+    "jest-expo-ts": "^18.0.1  ",
+    "react-native-scripts": "0.0.40",
+    "react-native-typescript-transformer": "^1.1.0",
     "react-scripts-ts": "2.2.0",
     "react-test-renderer": "16.0.0-alpha.12",
+    "tslint-config-prettier": "^1.1.0",
     "typescript": "^2.3.4"
   },
   "dependencies": {
-    "@types/jest": "^20.0.0",
-    "@types/node": "^7.0.31",
-    "@types/react": "^15.0.29",
+    "@types/jest": "^20.0.2",
+    "@types/react": "^15.0.31",
     "@types/react-dom": "^15.5.0",
-    "@types/react-native": "0.44.11",
-    "expo": "^18.0.0-rc.2",
+    "@types/react-native": "0.44.12",
+    "@types/react-test-renderer": "^15.5.1",
+    "@types/react-native-vector-icons": "^4.2.0",
+    "expo": "^18.0.6",
     "js-plus": "0.1.1",
     "mobx": "3.1.15",
     "mobx-react": "4.2.1",
     "react": "16.0.0-alpha.12",
     "react-dom": "16.0.0-alpha.12",
-    "react-native": "0.45.0",
+    "react-native": "0.45.1",
+    "react-native-web": "0.0.107",
+    "react-scripts-ts": "^2.3.2",
     "tslib": "^1.7.1"
   },
   "keywords": [],
@@ -45,5 +45,13 @@
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "jest": {
     "preset": "jest-expo-ts"
+  },
+  "babel": {
+    "presets": ["babel-preset-expo"],
+    "env": {
+      "development": {
+        "plugins": ["transform-react-jsx-source"]
+      }
+    }
   }
 }

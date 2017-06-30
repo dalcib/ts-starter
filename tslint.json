@@ -1,16 +1,12 @@
 {
-  /*
-  * Possible values:
-  * - the name of a built-in config
-  * - the name of an NPM module which has a "main" file that exports a config object
-  * - a relative path to a JSON file
-  */
-  "extends": [
-    "tslint:recommended",
-    "tslint-react",
-    "tslint-config-prettier"
-  ],
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
   "rules": {
+    "member-access": false,
+    "object-literal-sort-keys": false,
+    "type-literal-delimiter": false,
+    "jsx-no-multiline-js": false,
+    "no-parameter-properties": true,
+
     "deprecation": true,
     "prefer-const": true,
     "typeof-compare": true,
@@ -19,18 +15,12 @@
     "strict-type-predicates": true,
     "prefer-object-spread": true,
     "prefer-conditional-expression": true,
-    "no-unbound-method": [
-      true,
-      "ignore-static"
-    ],
+    "no-unbound-method": [true, "ignore-static"],
     "no-invalid-template-strings": true,
     "no-for-in-array": true,
     "no-floating-promises": true,
     "no-conditional-assignment": true,
-    "await-promise": [
-      true,
-      "Thenable"
-    ],
+    "await-promise": [true, "Thenable"],
     "unified-signatures": true,
     "no-unnecessary-type-assertion": true,
     "promise-function-async": true,
@@ -38,9 +28,7 @@
     "no-boolean-literal-compare": true,
     "match-default-export-name": true,
     "no-unnecessary-callback-wrapper": true,
-    "arrow-return-shorthand": [
-      false
-    ],
+    "arrow-return-shorthand": [false],
     "no-unnecessary-qualifier": true,
     "prefer-switch": [
       true,
@@ -48,82 +36,38 @@
         "min-cases": 2
       }
     ],
-    "prefer-template": [
-      true,
-      "allow-single-concat"
-    ],
+    "prefer-template": [true, "allow-single-concat"],
     "return-undefined": true,
     "switch-final-break": true,
-    "type-literal-delimiter": true,
     "arrow-parens": false,
-    "no-consecutive-blank-lines": [
-      true
-    ],
-    "align": [
-      false
-    ],
+    "no-consecutive-blank-lines": [true],
+    "align": [false],
     "import-spacing": false,
-    "interface-name": [
-      false
-    ],
+    "interface-name": [false],
     "interface-over-type-literal": false,
     "jsdoc-format": false,
     "no-trailing-whitespace": false,
-    "one-line": [
-      false
-    ],
-    "object-literal-key-quotes": [
-      false
-    ],
-    "ordered-imports": [
-      false
-    ],
-    "quotemark": [
-      false
-    ],
-    "semicolon": [
-      false
-    ],
+    "one-line": [false],
+    "object-literal-key-quotes": [false],
+    "ordered-imports": [false],
+    "quotemark": [false],
+    "semicolon": [false],
     "space-before-function-paren": false,
-    "whitespace": [
-      false
-    ],
-    "comment-format": [
-      false
-    ],
-    "max-line-length": [
-      false
-    ],
-    "indent": [
-      false
-    ],
+    "whitespace": [false],
+    "comment-format": [false],
+    "max-line-length": [false],
+    "indent": [false],
     "curly": false,
-    //"ban": false,
-    "member-access": false, // add
-    "object-literal-sort-keys": false, // add
-    "no-console": [
-      false
-    ],
-    "typedef-whitespace": [
-      false
-    ],
-    "only-arrow-functions": [
-      false
-    ],
-    "trailing-comma": [
-      false
-    ],
+    "no-console": [false],
+    "typedef-whitespace": [false],
+    "only-arrow-functions": [false],
+    "trailing-comma": [false],
     "no-var-requires": false,
-    "member-ordering": [
-      false
-    ],
-    "no-constructor-vars": true,
+    "member-ordering": [false],
     "no-debugger": true,
-    "no-duplicate-key": true,
     "no-shadowed-variable": true,
     "no-duplicate-variable": true,
     "no-switch-case-fall-through": true,
-    "no-unreachable": true,
     "no-unused-variable": [
       true,
       {
@@ -139,19 +83,7 @@
     "no-unsafe-finally": true,
     "no-var-keyword": true,
     "switch-default": true,
-    "typedef": [
-      true,
-      //"call-signature",
-      "parameter",
-      "property-declaration" //,
-      //"member-variable-declaration"
-    ],
-    "jsx-no-multiline-js": false //add
+    "typedef": [true, "parameter", "property-declaration"]
   },
-  "rulesDirectory": [
-    /*
-    * A list of relative or absolute paths to directories that contain custom rules.
-    * See the Custom Rules documentation below for more details.
-    */
-  ]
+  "rulesDirectory": []
 }

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { AppRegistry, Image, StyleSheet, Text, View } from 'react-native'
+import { AppRegistry, Image, StyleSheet, Text, View, TextStyle, ViewStyle } from 'react-native'
 
 // Components
 const Card = ({ children }: any) => <View style={styles.card}>{children}</View>
@@ -17,11 +17,12 @@ const styles = StyleSheet.create({
   card: {
     flexGrow: 1,
     justifyContent: 'center'
-  },
+  } as ViewStyle,
   title: {
-    fontSize: '1.25rem',
-    fontWeight: 'bold'
-  },
+    fontSize: 1.25,
+    fontWeight: 'bold',
+    fontFamily: "Roboto"
+  } as TextStyle,
   image: {
     height: 40,
     marginVertical: 10,
@@ -47,6 +48,6 @@ class App extends React.Component<{}, null> {
       </div>
     )
   }
-}
+}*/
 
-export default App*/
+export default App
